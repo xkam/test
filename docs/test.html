@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+
+	<script src="https://unpkg.com/ax-system"></script>
+
+</head>
+<body>
+
+<div id="app">Loading..</div>
+
+<script type='x-module'>
+
+	var Component = require('@angular/core').Component;
+
+	function Hello(){
+		this.msg = 'Hello Angular';
+	}
+
+	Hello.annotations = [new Component({
+		selector: '#app',
+		template: '{{msg}}'
+	})];
+
+	// --- module ---
+
+	var NgModule = require('@angular/core').NgModule,
+		BrowserModule = require('@angular/platform-browser').BrowserModule,
+		platformBrowserDynamic = require('@angular/platform-browser-dynamic').platformBrowserDynamic;
+
+	function App (){}
+
+	App.annotations = [new NgModule({
+		imports: [BrowserModule],
+		declarations: [Hello],
+		bootstrap: [Hello]
+	})];
+
+	platformBrowserDynamic().bootstrapModule(App);
+
+</script>
+</body>
+</html>
