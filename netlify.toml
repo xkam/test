@@ -36,6 +36,14 @@
     access-control-allow-origin = "*"
 
 [[headers]]
+  for = "/package/*"
+  [headers.values]
+    cache-control = '''
+    public,
+    s-maxage=3600, 
+    max-age=600'''
+
+[[headers]]
   for = "/package@*"
   [headers.values]
     cache-control = '''
