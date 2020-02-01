@@ -1,19 +1,19 @@
 
 [[redirects]]
   from = "/package/*"
-  to = "/dist/package@3.0.0/:splat"
+  to = "/package@3.0.0/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "/package@3/*"
-  to = "/dist/package/3.0.0/:splat"
+  to = "/package@3.0.0/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "/package@3.0/*"
-  to = "/dist/package/3.0.0/:splat"
+  to = "/package@3.0.0/:splat"
   status = 301
   force = true
 
