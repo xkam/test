@@ -1,0 +1,21 @@
+
+[[redirects]]
+  from = "/package/*"
+  to = "/dist/package/3.0.0/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/package@3/*"
+  to = "/dist/package/3.0.0/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/package@3.0/*"
+  to = "/dist/package/3.0.0/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/package@*"
+  to = "/dist/package/:splat"
+  status = 200
+
