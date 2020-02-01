@@ -28,3 +28,16 @@
   to = "/dist/package/:splat"
   status = 200
   force = true
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    access-control-allow-origin = "*"
+
+[[headers]]
+  for = "/dist/*"
+  [headers.values]
+    cache-control = '''
+    public
+    max-age=31536000'''
