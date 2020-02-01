@@ -1,21 +1,24 @@
 
 [[redirects]]
   from = "/package/*"
-  to = "/dist/package/3.0.0/:splat"
-  status = 200
+  to = "/dist/package@3.0.0/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/package@3/*"
   to = "/dist/package/3.0.0/:splat"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/package@3.0/*"
   to = "/dist/package/3.0.0/:splat"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/package@*"
   to = "/dist/package/:splat"
   status = 200
-
+  force = true
