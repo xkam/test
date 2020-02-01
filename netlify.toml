@@ -1,5 +1,11 @@
 
 [[redirects]]
+  from = "/package"
+  to = "/package@3.0.0/test.html"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/package/*"
   to = "/package@3.0.0/:splat"
   status = 302
