@@ -39,5 +39,5 @@
   for = "/package@*"
   [headers.values]
     cache-control = '''
-    public
+    public,
     max-age=31536000'''
