@@ -2,19 +2,19 @@
 [[redirects]]
   from = "/package/*"
   to = "/package@3.0.0/:splat"
-  status = 301
+  status = 302
   force = true
 
 [[redirects]]
   from = "/package@3/*"
   to = "/package@3.0.0/:splat"
-  status = 301
+  status = 302
   force = true
 
 [[redirects]]
   from = "/package@3.0/*"
   to = "/package@3.0.0/:splat"
-  status = 301
+  status = 302
   force = true
 
 [[redirects]]
