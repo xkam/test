@@ -36,7 +36,7 @@
     access-control-allow-origin = "*"
 
 [[headers]]
-  for = "/dist/*"
+  for = "/package@*"
   [headers.values]
     cache-control = '''
     public
