@@ -1,5 +1,23 @@
 
 [[redirects]]
+  from = "/test"
+  to = "https://activewidgets.com/test"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/test2/*"
+  to = "https://activewidgets.com/test2/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/test3*"
+  to = "https://activewidgets.com/test3:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/package"
   to = "/package@3.0.0/test.html"
   status = 302
