@@ -1,27 +1,18 @@
 
 [[redirects]]
   from = "/test"
+  query = {a = ":a", b = ":b"}
   to = "https://activewidgets.com/test"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/test2/*"
-  to = "https://activewidgets.com/test2/:splat"
+  from = "/test2"
+  query = {a = ":a", b = ":b"}
+  to = "https://activewidgets.com/test?a=:a&b=:b"
   status = 301
   force = true
 
-[[redirects]]
-  from = "/test3*"
-  to = "https://activewidgets.com/test3:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/test4*"
-  to = "https://activewidgets.com/test3:splat"
-  status = 200
-  force = true
 
 
 [[redirects]]
