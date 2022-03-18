@@ -1,0 +1,7 @@
+/node_modules/
+/examples/*/node_modules/
+/examples/*/public/build/
+/examples/*/package-lock.json
+
+.DS_Store
+*.bat
