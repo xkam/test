@@ -1,5 +1,12 @@
 <script>
-	let name = 'world';
+    
+import { Datagrid } from '@activewidgets/svelte';
+import './styles.css';
+
+let rows = [
+    { message: 'Hello, World!' }
+];
+
 </script>
 
-<h1>Hello {name}!</h1>
+<Datagrid {rows} />
