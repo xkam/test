@@ -1,3 +1,7 @@
+# Main Title
+
+Lorem ipsum text 
+
 ## Some test title
 
 hello
